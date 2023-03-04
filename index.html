@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ================== FONTS ================== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="style.css">
+
+        <title>Click Weather</title>
+    </head>
+    
+    <body style="background-image: url('images/sky_background.jpg');">
+        <div class="container">
+            <div class="search-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Enter your location">
+                <button class="fa-solid fa-magnifying-glass"></button>
+            </div>
+            <div class="not-found">
+                <img src="images/404.png">
+                <p>Sorry, location not found.</p>
+            </div>
+            <div class="weather-box">
+                <img src="">
+                <div class="temperature"></div>
+                <div>
+                    <div class="description"></div>
+                    <div class="feels_like"></div>
+                </div>
+            </div>
+            <div class="weather-details">
+                <div class="first_row">
+                    <div class="humidity">
+                        <i class="fa-solid fa-droplet"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="pressure">
+                        <i class="fa-solid fa-water"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Pressure</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="second_row">
+                    <div class="wind">
+                        <i class="fa-solid fa-wind"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="clouds">
+                        <i class="fa-solid fa-cloud"></i>
+                        <div class="text">
+                            <span></span>
+                            <p>Cloudiness</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ICONS -->
+        <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+        
+        <!--===== MAIN JS =====-->
+        <script src="index.js"></script>
+    </body>
+
+</html>
